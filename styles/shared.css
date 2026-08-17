@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Oleo Script;
+    src: url(/fonts/Oleo_Script/OleoScript-Bold.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-family: 'Oleo Script', sans-serif;
+    align-self: center;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+.nav-items {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-self: center;
+}
+
+nav li a {
+    color: rgb(126, 126, 182);
+    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.hamburger,
+.close {
+    width: 3rem;
+    height: 3rem;
+    padding: .4rem;
+    border: 4px solid rgb(4, 4, 235);
+    display: none;
+}
+
+#page:target .hamburger {
+    display: none;
+}
+
+#page:target .close {
+    display: block;
+}
+
+.hamburger {
+    display: block;
+    margin-left: 100%;
+}
+
+#page:target .header {
+    position: static;
+    width: 100%;
+}
+
+#page:target {
+    height: 100vh;
+}
+
+#page:target .nav-items {
+    display: block;
+    justify-content: center;
+}
+
+#page:target .main {
+    display: none;
+}
+
+#page:target footer {
+    display: none;
+}
+
+#page:target nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to left, black, rgb(116, 107, 107));
+    padding: 2rem;
+    gap: 5rem;
+    justify-content: center;
+}
+
+footer img {
+    width: 4rem;
+    height: 4rem;
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-items {
+        display: block;
+        padding: 1rem;
+       
+    }
+}
