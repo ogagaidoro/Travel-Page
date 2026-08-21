@@ -6,17 +6,17 @@
 
 @font-face {
     font-family: Oleo Script;
-    src: url(/fonts/Oleo_Script/OleoScript-Bold.ttf);
+    src: url(../fonts/Oleo_Script/OleoScript-Bold.ttf);
 }
 
 @font-face {
     font-family: Quicksand;
-    src: url(/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+    src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: Raleway;
-    src: url(/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
 }
 
 h2 {
@@ -151,7 +151,33 @@ footer img {
 
     .nav-items {
         display: block;
-        padding: 1rem;
-       
+        padding: 1rem
+    }
+
+    #page:target nav ul,
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        flex-direction: row;
+        margin-top: .4rem;
+    }
+
+    #page:target .intro-img {
+        display: block;
+    }
+
+    #page:target .close {
+        display: none;
+    }
+
+    #page:target .main {
+        display: block;
+    }
+
+    #page:target footer {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
     }
 }

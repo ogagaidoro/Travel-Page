@@ -74,12 +74,12 @@ main {
     .cards {
         display: flex;
         flex-direction: row;
-        height: 25rem;
+        height: 32rem;
     }
 
     .cards img {
-        width: 60%;
-        height: 25rem;
+        width: 45%;
+        height: 32rem;
         border-top-left-radius: .5rem;
         border-top-right-radius: 0;
         border-bottom-left-radius: .5rem;
@@ -92,10 +92,12 @@ main {
 
     .cards:nth-of-type(3) {
         grid-column: 1/span 2;
+        height: 25rem;
     }
 
     .cards:nth-of-type(3) img {
         width: 40%;
+        height: 25rem;
     }
 
     .cards:nth-of-type(3) p {
@@ -104,5 +106,37 @@ main {
 
     .cards:nth-of-type(3) a{
         margin-left: 90%;
+    }
+
+    #page:target main {
+        height: 278vh;
+        position: static;
+        background-color: rgb(224, 224, 255);
+    }
+
+    @media (min-width: 1260px) {
+        .cards {
+            height: 25rem;
+        }
+
+        .cards img {
+            height: 25rem;
+        }
+    }
+
+    @media (min-width: 1260px) {
+        .cards {
+            height: 30rem;
+        }
+
+        .cards img {
+            height: 30rem;
+        }
+    }
+
+    @media (min-width: 1438px) {
+        .card-info p {
+            margin-bottom: 8rem;
+        }
     }
 }
